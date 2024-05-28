@@ -1,0 +1,8 @@
+PIL
+time
+urllib
+random
+tkinter
+datetime
+requests
+webbrowser
