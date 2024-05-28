@@ -4,9 +4,9 @@ from urllib.request import urlretrieve
 import requests
 
 unsplashKey = r"XWB7lmShQSXy0tQIpOw44rGf4INXJQ41sIWixmnW3g4"
-imgDir = r"/workspaces/150865231/WeatherReport/assets/temp.jpg"
-overlayDir = r"/workspaces/150865231/WeatherReport/assets/overlay.png"
-dest = r"/workspaces/150865231/WeatherReport/assets/dynamicBg.png"
+imgDir = r"WeatherReport/assets/temp.jpg"
+overlayDir = r"WeatherReport/assets/overlay.png"
+dest = r"WeatherReport/assets/dynamicBg.png"
 
 def backgroundResearch(city="Rome, IT"):
     if city == None:
@@ -40,7 +40,7 @@ def configure(image):
 
 def getImage(obj):
     photo_url = obj["urls"]["raw"]
-    img = urlretrieve(photo_url, r"/workspaces/150865231/WeatherReport/assets/temp.jpg")
+    img = urlretrieve(photo_url, r"WeatherReport/assets/temp.jpg")
     return img
 
 
