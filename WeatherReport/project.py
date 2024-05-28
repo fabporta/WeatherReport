@@ -10,7 +10,7 @@ import random
 
 APIKEY = "188601d4eba1a901871e7af694297b30"
 
-DYNAMICBGDIR = r"/workspaces/150865231/WeatherReport/assets/dynamicBg.png"
+DYNAMICBGDIR = r"WeatherReport/assets/dynamicBg.png"
 
 
 class TimeDate():
@@ -200,7 +200,7 @@ def query(city):
 
 
 def getImg(x: int, y: int, file="img.png"):
-    imgDir = r"/workspaces/150865231/WeatherReport/assets/" + f"{file}"
+    imgDir = r"WeatherReport/assets/" + f"{file}"
     img = Image.open(imgDir)
     img = img.resize((x, y))
     img = ImageTk.PhotoImage(img)
